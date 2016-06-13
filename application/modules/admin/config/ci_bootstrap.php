@@ -74,6 +74,21 @@ $config['ci_bootstrap'] = array(
 				'User Groups'	=> 'user/group',
 			)
 		),
+		'blog' => array(
+			'name'		=> 'Blog',
+			'url'		=> 'blog',
+			'icon'		=> 'ion ion-edit',	// can use Ionicons instead of FontAwesome
+			'children'  => array(
+				'Blog Posts'		=> 'blog/post',
+				'Blog Categories'	=> 'blog/category',
+				'Blog Tags'			=> 'blog/tag',
+			)
+		),
+		'cover_photo' => array(
+			'name'		=> 'Cover Photos',
+			'url'		=> 'cover_photo',
+			'icon'		=> 'ion ion-image',	// can use Ionicons instead of FontAwesome
+		),
 		'panel' => array(
 			'name'		=> 'Admin Panel',
 			'url'		=> 'panel',
