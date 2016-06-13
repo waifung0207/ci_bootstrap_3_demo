@@ -14,3 +14,24 @@ defined('BASEPATH') OR exit('No direct script access allowed');
  *   description="Everything about users"
  * )
  */
+
+/**
+ * @SWG\Tag(
+ *   name="blog",
+ *   description="Blog system"
+ * )
+ */
+
+/**
+ * @SWG\Tag(
+ *   name="misc",
+ *   description="Miscellaneous"
+ * )
+ */
+
+/**
+ * @SWG\Tag(
+ *   name="dummy",
+ *   description="Dummy endpoints"
+ * )
+ */

@@ -14,7 +14,7 @@ namespace MySwaggerDefinitions;
 /**
  * @SWG\Definition()
  */
-class User {
+class BlogCategory {
 
 	/**
 	 * Unique ID
@@ -27,29 +27,74 @@ class User {
 	 * @var string
 	 * @SWG\Property()
 	 */
-	public $username;
+	public $pos;
 
 	/**
 	 * @var string
 	 * @SWG\Property()
 	 */
-	public $email;
+	public $title;
+}
+
+/**
+ * @SWG\Definition()
+ */
+class BlogPost {
+
+	/**
+	 * Unique ID
+	 * @var int
+	 * @SWG\Property()
+	 */
+	public $id;
+
+	/**
+	 * Blog Category ID
+	 * @var int
+	 * @SWG\Property()
+	 */
+	public $category_id;
+
+	/**
+	 * Author ID (Admin User)
+	 * @var int
+	 * @SWG\Property()
+	 */
+	public $author_id;
 
 	/**
 	 * @var string
 	 * @SWG\Property()
 	 */
-	public $first_name;
+	public $title;
 
 	/**
 	 * @var string
 	 * @SWG\Property()
 	 */
-	public $last_name;
+	public $image_url;
 
 	/**
 	 * @var string
-	 * @SWG\Property(enum={"pending", "blacklisted"})
+	 * @SWG\Property()
+	 */
+	public $content_brief;
+
+	/**
+	 * @var string
+	 * @SWG\Property()
+	 */
+	public $content;
+
+	/**
+	 * @var string
+	 * @SWG\Property()
+	 */
+	public $publish_time;
+
+	/**
+	 * @var string
+	 * @SWG\Property(enum={"draft", "active", "hidden"})
 	 */
 	public $status;
 }
@@ -57,17 +102,18 @@ class User {
 /**
  * @SWG\Definition()
  */
-class UserPut {
+class BlogTag {
+
+	/**
+	 * Unique ID
+	 * @var int
+	 * @SWG\Property()
+	 */
+	public $id;
 
 	/**
 	 * @var string
 	 * @SWG\Property()
 	 */
-	public $first_name;
-
-	/**
-	 * @var string
-	 * @SWG\Property()
-	 */
-	public $last_name;
+	public $title;
 }

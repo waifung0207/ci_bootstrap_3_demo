@@ -14,7 +14,7 @@ namespace MySwaggerDefinitions;
 /**
  * @SWG\Definition()
  */
-class User {
+class CoverPhoto {
 
 	/**
 	 * Unique ID
@@ -24,50 +24,20 @@ class User {
 	public $id;
 
 	/**
-	 * @var string
+	 * @var int
 	 * @SWG\Property()
 	 */
-	public $username;
+	public $pos;
 
 	/**
 	 * @var string
 	 * @SWG\Property()
 	 */
-	public $email;
+	public $image_url;
 
 	/**
 	 * @var string
-	 * @SWG\Property()
-	 */
-	public $first_name;
-
-	/**
-	 * @var string
-	 * @SWG\Property()
-	 */
-	public $last_name;
-
-	/**
-	 * @var string
-	 * @SWG\Property(enum={"pending", "blacklisted"})
+	 * @SWG\Property(enum={"active", "hidden"})
 	 */
 	public $status;
-}
-
-/**
- * @SWG\Definition()
- */
-class UserPut {
-
-	/**
-	 * @var string
-	 * @SWG\Property()
-	 */
-	public $first_name;
-
-	/**
-	 * @var string
-	 * @SWG\Property()
-	 */
-	public $last_name;
 }
