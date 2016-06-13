@@ -2,7 +2,6 @@
 
 This is a demo repository based on [CI Bootstrap 3](https://github.com/waifung0207/ci_bootstrap_3) (build: 2016-06-12)
 
-
 ### Setup Guide
 
 1. git clone this repo
