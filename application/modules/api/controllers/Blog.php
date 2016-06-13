@@ -69,7 +69,7 @@ class Blog extends API_Controller {
 		$data = $this->posts->get($id);
 		empty($data) ? $this->error_not_found() : $this->response($data);
 	}
-
+	
 	/**
 	 * @SWG\Get(
 	 * 	path="/blog/categories",
