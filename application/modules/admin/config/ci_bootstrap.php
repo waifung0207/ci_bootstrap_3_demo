@@ -99,6 +99,14 @@ $config['ci_bootstrap'] = array(
 				'Admin User Groups'		=> 'panel/admin_user_group',
 			)
 		),
+		'util' => array(
+			'name'		=> 'Utilities',
+			'url'		=> 'util',
+			'icon'		=> 'fa fa-cogs',
+			'children'  => array(
+				'Database Versions'		=> 'util/list_db',
+			)
+		),
 		'logout' => array(
 			'name'		=> 'Sign Out',
 			'url'		=> 'panel/logout',
@@ -117,6 +125,11 @@ $config['ci_bootstrap'] = array(
 		'panel/admin_user'			=> array('webmaster'),
 		'panel/admin_user_create'	=> array('webmaster'),
 		'panel/admin_user_group'	=> array('webmaster'),
+		'util'						=> array('webmaster'),
+		'util/list_db'				=> array('webmaster'),
+		'util/backup_db'			=> array('webmaster'),
+		'util/restore_db'			=> array('webmaster'),
+		'util/remove_db'			=> array('webmaster'),
 	),
 
 	// AdminLTE settings
