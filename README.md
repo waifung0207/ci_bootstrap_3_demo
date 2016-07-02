@@ -1,6 +1,6 @@
 ## CodeIgniter 3 Bootstrap Demo
 
-This is a demo repository based on [CI Bootstrap 3](https://github.com/waifung0207/ci_bootstrap_3) (version: build 2016-06-22).
+This is a demo repository based on [CI Bootstrap 3](https://github.com/waifung0207/ci_bootstrap_3) (version: build 2016-07-02).
 
 
 ### Setup Guide
